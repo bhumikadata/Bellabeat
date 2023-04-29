@@ -47,6 +47,7 @@ SELECT
  COUNT(DISTINCT Id) AS num_of_users,
  ROUNd(AVG(TotalSteps),2) AS avg_steps,
  ROUND(AVG(TotalDistance),2) AS avg_distance,
+ ROUND(AVG(SedentaryMinutes)/60,2) AS avg_sedentary_hours,
  ROUND(AVG(Calories),2) AS avg_calories_burned
  
 FROM
